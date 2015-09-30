@@ -6,9 +6,6 @@ import Sort.*;
  */
 public class Program {
     public static void main(String[] args){
-        //버블 선택 삽입
-        //퀵, 병합
-        //기수, 계수
 
         //Bubble Sort
         String[] bubble_array = new String[]{"abc","bcd","aaa","aAa","AAA","qwe","ryw","www","zzz","Zzz","zzZ"};
@@ -77,22 +74,10 @@ public class Program {
         printArray(radix_array2);
         System.out.println();
 
-        //CountingSort
-        int[] counting_array = new int[]{75,42,450,22,20,125,1332,39,19,66,3,7};
-        CountingSort countingSort = new CountingSort();
-        countingSort.CountingSort(counting_array);
-        printArray(counting_array);
     }
 
     public static <E> void printArray(E[] array) {
         for(E i : array){
-            System.out.print(i + " ");
-        }
-        System.out.println();
-    }
-
-    public static void printArray(int[] array) {
-        for(int i : array){
             System.out.print(i + " ");
         }
         System.out.println();
